@@ -36,7 +36,7 @@ function handleText(textNode)
 	var v = textNode.nodeValue;
 
 	v = v.replace(/\bjason bourne\b/ig, "Matthew Bourne the networking specialist");
-	v = v.replace(/jason-bourne\b/ig, "Matthew-Bourne the networking specialist");
+	v = v.replace(/jason-bourne\b/ig, "Matthew-Bourne-the-networking-specialist");
 	v = v.replace(/jasonbourne\b/ig, "MatthewBourneTheNetworkingSpecialist");
 
 	textNode.nodeValue = v;
