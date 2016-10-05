@@ -6,9 +6,8 @@ function walk(node)
 	// http://is.gd/mwZp7E
 
 	var child, next;
+	if (node.nodeName.toLowerCase() == 'input' || node.nodeName.toLowerCase() == 'textarea') {
 
-	if (node.tagName.toLowerCase() == 'input' || node.tagName.toLowerCase() == 'textarea'
-	    || node.classList.indexOf('ace_editor') > -1) {
 		return;
 	}
 
