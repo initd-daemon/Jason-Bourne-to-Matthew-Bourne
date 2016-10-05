@@ -39,6 +39,11 @@ function handleText(textNode)
 	v = v.replace(/\bJason bourne\b/g, "Matthew bourne the networking specialist");
 	v = v.replace(/\bjason Bourne\b/g, "matthew Bourne the networking specialist");
 	v = v.replace(/\bjason bourne\b/g, "matthew bourne the networking specialist");
+	v = v.replace(/\bJason-Bourne \b/g, "Matthew-Bourne the networking specialist");
+	v = v.replace(/\bJason-bourne \b/g, "Matthew-bourne the networking specialist");
+	v = v.replace(/\bjason-Bourne \b/g, "matthew-Bourne the networking specialist");
+	v = v.replace(/\bjason-bourne \b/g, "matthew-bourne the networking specialist");
+
 
 	textNode.nodeValue = v;
 }
